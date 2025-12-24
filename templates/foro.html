@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro de Comentarios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="pagina_secundaria">
+    <nav class="navegador">
+        <ul>
+            <li><a href="{{ url_for('principal') }}">Inicio</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="titulo">Foro de Comentarios</h1>
+    </header>
+        <div class="admin-panel">
+            {% if es_admin %}
+                <span class="estado admin">Modo administrador</span>
+                <a href="{{ url_for('logout') }}" class="btn btn-salir">Salir</a>
+            {% else %}
+                <span class="estado usuario">Modo usuario</span>
+                <a href="{{ url_for('admin') }}" class="btn btn-admin">Entrar como admin</a>
+            {% endif %}
+        </div>
+
+    <section id="foro">
+        <h2>Comentarios recientes</h2>
+        <ul id="lista-comentarios">
+            {% for c in comentarios %}
+                <li class="comentario" data-id="{{ c.id }}">
+                    <strong>{{ c.nombre }}</strong>
+
+                    {% if es_admin %}
+                        <span class="correo">{{ c.email }}</span>
+                        <button class="btn-eliminar">Eliminar</button>
+                    {% endif %}
+
+                    <p>{{ c.comentarios }}</p>
+                    <small>{{ c.fecha }}</small>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/foro.js') }}"></script>
+</body>
+</html>

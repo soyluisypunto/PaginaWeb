@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body id="pagina_principal">
+    <header>
+        <h1 id="titulo-principal">
+            Bienvenido a mi pagina web
+        </h1>
+    </header>
+        <form action="{{ url_for('principal') }}" method="get">
+        <button id="boton-principal">Presiona aquí</button>
+    </form>
+</body>
+</html>

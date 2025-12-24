@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Violín</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body class="pagina_secundaria">
+
+    <nav class="navegador">
+        <ul>
+            <li><a href="{{ url_for('principal') }}">Inicio</a></li>
+            <li><a href="#Instrucciones2">Instrucciones</a></li>
+            <li><a href="#aprendizaje">Aprender</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="titulo">Violín</h1>
+
+    <div class="parrafos">
+        <p>
+            El violín es un instrumento de cuerda frotada muy expresivo,
+            utilizado en música clásica, folclórica y moderna.
+        </p>
+        <p>
+            En esta sección aprenderás lo básico para comenzar a tocar violín
+            desde cero.
+        </p>
+    </div>
+
+    <section class="Instrucciones" id="Instrucciones2">
+        <h2>¿Cómo aprender violín?</h2>
+        <ol>
+            <li>Conocer las partes del violín.</li>
+            <li>Aprender la postura correcta.</li>
+            <li>Sujetar correctamente el arco.</li>
+            <li>Tocar las primeras notas.</li>
+        </ol>
+    </section>
+
+    <section class="instrumentos" id="partes">
+        <div class="cuerpo">
+            <h3>Partes del violín</h3>
+            <p>
+                Conocer las partes del violín te ayudará a entender
+                cómo se produce el sonido.
+            </p>
+            <ul>
+                <li><strong>Cuerpo:</strong> amplifica el sonido.</li>
+                <li><strong>Mástil:</strong> donde se colocan los dedos.</li>
+                <li><strong>Clavijas:</strong> afinan el instrumento.</li>
+                <li><strong>Arco:</strong> produce el sonido al frotar las cuerdas.</li>
+            </ul>
+        </div>
+
+        <img src="static/imagenes/partesViolin.jpg" alt="Partes del violín">
+    </section>
+
+    <section class="instrumentos" id="postura">
+        <div class="cuerpo">
+            <h3>Postura correcta</h3>
+            <p>
+                Una buena postura evita tensiones y mejora el control del violín.
+            </p>
+            <ul>
+                <li>Espalda recta.</li>
+                <li>Violín apoyado entre el hombro y la barbilla.</li>
+                <li>Hombros relajados.</li>
+            </ul>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/5oMoAvAEqe4"
+            title="Postura correcta para tocar violín"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="arco">
+        <div class="cuerpo">
+            <h3>Cómo sostener el arco</h3>
+            <p>
+                La forma de sostener el arco influye directamente en el sonido.
+            </p>
+            <ul>
+                <li>Pulgar ligeramente doblado.</li>
+                <li>Dedos relajados.</li>
+                <li>Movimiento suave del brazo.</li>
+            </ul>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/IJgrOwwm2-0"
+            title="Cómo sostener el arco del violín"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- PRIMERAS NOTAS -->
+    <section class="instrumentos" id="aprendizaje">
+        <div class="cuerpo">
+            <h3>Primeras notas</h3>
+            <p>
+                Empieza tocando cuerdas al aire antes de usar los dedos.
+            </p>
+            <ul>
+                <li>Cuerda Sol</li>
+                <li>Cuerda Re</li>
+                <li>Cuerda La</li>
+                <li>Cuerda Mi</li>
+            </ul>
+            <p>
+                Concéntrate en producir un sonido limpio y constante.
+            </p>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/nuE_6buCiMc"
+            title="Primeras notas en el violín"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="practica">
+        <div class="cuerpo">
+            <h3>Rutina de práctica</h3>
+            <p>
+                Dedica entre 15 y 20 minutos diarios.
+            </p>
+            <ul>
+                <li>5 minutos de postura</li>
+                <li>5 minutos de arco</li>
+                <li>5-10 minutos de cuerdas al aire</li>
+            </ul>
+        </div>
+
+        <img src="static/imagenes/PracticaViolin.png" alt="Práctica de violín">
+    </section>
+
+    <footer>
+        <p>
+            La paciencia y la constancia construyen un buen sonido.
+            Disfruta cada nota.
+        </p>
+    </footer>
+
+</body>
+</html>

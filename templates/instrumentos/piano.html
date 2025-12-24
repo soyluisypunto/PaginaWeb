@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Piano</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body class="pagina_secundaria">
+
+    <nav class="navegador">
+        <ul>
+            <li><a href="{{ url_for('principal') }}">Inicio</a></li>
+            <li><a href="#Instrucciones4">Instrucciones</a></li>
+            <li><a href="#aprendizaje">Aprender</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="titulo">Piano</h1>
+
+    <div class="parrafos">
+        <p>
+            El piano es un instrumento fundamental en la música.
+            Ayuda a desarrollar coordinación, lectura musical y oído.
+        </p>
+        <p>
+            En esta sección aprenderás lo básico para comenzar a tocar piano desde cero.
+        </p>
+    </div>
+
+    <section class="Instrucciones" id="Instrucciones4">
+        <h2>¿Cómo aprender piano?</h2>
+        <ol>
+            <li>Conocer las teclas.</li>
+            <li>Aprender la postura correcta.</li>
+            <li>Ejercitar los dedos.</li>
+            <li>Tocar las primeras melodías.</li>
+        </ol>
+    </section>
+
+    <section class="instrumentos" id="teclas">
+        <div class="cuerpo">
+            <h3>Teclas del piano</h3>
+            <p>
+                El piano tiene teclas blancas y negras que se repiten en patrones.
+            </p>
+            <ul>
+                <li>Teclas blancas: notas naturales.</li>
+                <li>Teclas negras: sostenidos y bemoles.</li>
+                <li>El patrón se repite a lo largo del teclado.</li>
+            </ul>
+        </div>
+
+        <img src="static/imagenes/PianoTeclas.jpeg" alt="Teclas del piano">
+    </section>
+
+    <section class="instrumentos" id="postura">
+        <div class="cuerpo">
+            <h3>Postura correcta</h3>
+            <p>
+                Una postura adecuada facilita el movimiento de los dedos.
+            </p>
+            <ul>
+                <li>Espalda recta.</li>
+                <li>Manos relajadas.</li>
+                <li>Dedos ligeramente curvados.</li>
+            </ul>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/nBG3OO7v-CE"
+            title="Postura correcta en el piano"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="ejercicios">
+        <div class="cuerpo">
+            <h3>Ejercicios para los dedos</h3>
+            <p>
+                Los ejercicios ayudan a ganar fuerza e independencia.
+            </p>
+            <ul>
+                <li>Tocar cada dedo por separado.</li>
+                <li>Mantener un ritmo constante.</li>
+                <li>Empezar lentamente.</li>
+            </ul>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/p7xQ2hodEjA"
+            title="Ejercicios básicos para piano"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="aprendizaje">
+        <div class="cuerpo">
+            <h3>Primera melodía</h3>
+            <p>
+                Aprende una melodía sencilla para empezar a coordinar ambas manos.
+            </p>
+            <ul>
+                <li>Usa solo teclas blancas.</li>
+                <li>Mantén el tempo.</li>
+                <li>Practica con metrónomo.</li>
+            </ul>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/warNazXfAoc"
+            title="Primera melodía en piano"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="practica">
+        <div class="cuerpo">
+            <h3>Rutina de práctica</h3>
+            <p>
+                Practicar diariamente mejora el aprendizaje.
+            </p>
+            <ul>
+                <li>5 minutos de postura</li>
+                <li>5 minutos de ejercicios</li>
+                <li>5 minutos de melodía</li>
+            </ul>
+        </div>
+
+        <img src="static/imagenes/PracticaPiano.png" alt="Práctica de piano">
+    </section>
+
+    <footer>
+        <p>
+            La paciencia y la constancia hacen al pianista.
+            Disfruta cada nota.
+        </p>
+    </footer>
+
+</body>
+</html>

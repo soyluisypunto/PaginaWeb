@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="pagina_secundaria">
+
+<header>
+    <h1 class="titulo">Bienvenido a la página principal</h1>
+    <p class="parrafos">
+        La música es una forma de expresión universal y aprender a tocar un instrumento
+        puede ser una experiencia divertida y enriquecedora.
+        En esta plataforma encontrarás guías básicas, consejos prácticos y recursos
+        de aprendizaje para distintos instrumentos musicales, pensados especialmente
+        para principiantes.
+    </p>
+
+    <nav class="navegador">
+        <ul>
+            <li><a href="#Instrucciones1">Instrucciones</a></li>
+            <li><a href="#Bateria">Batería</a></li>
+            <li><a href="#FlautaTraversa">Flauta Traversa</a></li>
+            <li><a href="#Guitarra">Guitarra</a></li>
+            <li><a href="#Piano">Piano</a></li>
+            <li><a href="#Saxofon">Saxofón</a></li>
+            <li><a href="#Violin">Violín</a></li>
+            <li><a href="{{ url_for('foro') }}">Comentarios</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="Instrucciones" id="Instrucciones1">
+        <h2>¿Cómo usar esta página?</h2>
+        <ol>
+            <li>Lee la breve descripción de cada instrumento.</li>
+            <li>Elige el instrumento que más te guste o te llame la atención.</li>
+            <li>Haz clic en el enlace para acceder a su página específica.</li>
+            <li>Sigue las instrucciones paso a paso para comenzar a aprender.</li>
+        </ol>
+    </section>
+
+    <section class="instrumentos" id="Bateria">
+        <h3 >Batería</h3>
+        <div class="cuerpo">
+        <p>
+            La batería es el corazón rítmico de muchas canciones.
+            Es un instrumento de percusión que ayuda a marcar el tiempo
+            y dar energía a la música.
+        </p>
+        <h4>¿Qué aprenderás?</h4>
+        <ul>
+            <li>Partes básicas de la batería</li>
+            <li>Cómo sostener las baquetas</li>
+            <li>Ritmos sencillos para principiantes</li>
+        </ul>
+            <form action="{{ url_for('bateria') }}" method="get">
+                <button class="botonPaginas">Aprender Instrumento</button>
+            </form>
+        </div> 
+        <img src="static/imagenes/bateria.jpeg">
+    </section>
+
+    <section class="instrumentos" id="FlautaTraversa">
+        <h3  >Flauta Traversa</h3>
+        <div class="cuerpo">
+        <p>
+            La flauta traversa es un instrumento de viento elegante y versátil,
+            muy usado en música clásica y moderna.
+        </p>
+        <h4>¿Qué aprenderás?</h4>
+        <ul>
+            <li>Posición correcta de la flauta</li>
+            <li>Técnica básica de respiración</li>
+            <li>Primeras notas y melodías</li>
+        </ul>
+            <form action="{{ url_for('flauta') }}" method="get">
+                <button class="botonPaginas">Aprender Instrumento</button>
+            </form>
+        </div>
+        <img src="static/imagenes/FlautaTraversa.jpg">
+    </section>
+
+    <section class="instrumentos" id="Guitarra">
+        <h3 >Guitarra</h3>
+        <div class="cuerpo">
+        <p>
+            La guitarra es uno de los instrumentos más populares del mundo
+            y es ideal para acompañar canciones o tocar melodías.
+        </p>
+        <h4>¿Qué aprenderás?</h4>
+        <ul>
+            <li>Partes de la guitarra</li>
+            <li>Acordes básicos</li>
+            <li>Ritmos simples para comenzar</li>
+        </ul>
+            <form action="{{ url_for('guitarra') }}" method="get">
+                <button class="botonPaginas">Aprender Instrumento</button>
+            </form>
+        </div>
+        <img src="static/imagenes/guitarra.jpeg">
+    </section>
+
+    <section class="instrumentos" id="Piano">
+        <div class="cuerpo">
+        <h3>Piano</h3>
+        <p>
+            El piano es un instrumento fundamental para comprender la música,
+            ya que permite visualizar fácilmente las notas y los acordes.
+        </p>
+        <h4>¿Qué aprenderás?</h4>
+        <ul>
+            <li>Reconocimiento de las teclas</li>
+            <li>Postura correcta de las manos</li>
+            <li>Ejercicios básicos y melodías simples</li>
+        </ul>
+            <form action="{{ url_for('piano') }}" method="get">
+                <button class="botonPaginas">Aprender Instrumento</button>
+            </form>
+        </div>
+        <img src="static/imagenes/piano.jpeg">
+    </section>
+
+    <section class="instrumentos" id="Saxofon">
+        <div class="cuerpo">
+        <h3>Saxofón</h3>
+        <p>
+            El saxofón es un instrumento de viento con un sonido expresivo,
+            muy usado en jazz, blues y música moderna.
+        </p>
+        <h4>¿Qué aprenderás?</h4>
+        <ul>
+            <li>Cómo armar y sostener el saxofón</li>
+            <li>Emisión del sonido</li>
+            <li>Escalas y ejercicios iniciales</li>
+        </ul>
+            <form action="{{ url_for('saxofon') }}" method="get">
+                <button class="botonPaginas">Aprender Instrumento</button>
+            </form>
+        </div>
+        <img src="static/imagenes/saxofon.jpeg">
+    </section>
+
+    <section class="instrumentos" id="Violin">
+        <div class="cuerpo">
+        <h3>Violín</h3>
+        <p>
+            El violín es un instrumento de cuerda que destaca por su sonido
+            brillante y emotivo, muy usado en música clásica y contemporánea.
+        </p>
+        <h4>¿Qué aprenderás?</h4>
+        <ul>
+            <li>Postura correcta del violín y el arco</li>
+            <li>Afinación básica</li>
+            <li>Primeras notas y ejercicios</li>
+        </ul>
+            <form action="{{ url_for('violin') }}" method="get">
+                <button class="botonPaginas">Aprender Instrumento</button>
+            </form>
+        </div>
+        <img src="static/imagenes/violin.jpeg">
+    </section>
+
+        <form action="{{ url_for('encuesta') }}" method="get">
+                <button class="botonPaginas">Agregar Sugerencias/Cambios</button>
+        </form>
+</main>
+
+<footer>
+    <p>
+        No necesitas experiencia previa para comenzar.
+        ¡Elige tu instrumento favorito y empieza tu camino musical hoy mismo!
+    </p>
+</footer>
+</body>
+</html>

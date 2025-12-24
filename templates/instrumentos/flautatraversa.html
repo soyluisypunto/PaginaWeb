@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Flauta Traversa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body class="pagina_secundaria">
+
+    <nav class="navegador">
+        <ul>
+            <li><a href="{{ url_for('principal') }}">Inicio</a></li>
+            <li><a href="#Instrucciones3">Instrucciones</a></li>
+            <li><a href="#aprendizaje">Aprender</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="titulo">Flauta Traversa</h1>
+
+    <div class="parrafos">
+        <p>
+            La flauta traversa es un instrumento de viento utilizado en música clásica,
+            contemporánea y popular. Su sonido es suave y expresivo.
+        </p>
+        <p>
+            En esta sección aprenderás desde lo más básico para empezar a tocar correctamente.
+        </p>
+    </div>
+
+    <section class="Instrucciones" id="Instrucciones3">
+        <h2>¿Cómo aprender flauta traversa?</h2>
+        <ol>
+            <li>Conocer las partes de la flauta.</li>
+            <li>Aprender la postura correcta.</li>
+            <li>Practicar la respiración.</li>
+            <li>Tocar las primeras notas.</li>
+        </ol>
+    </section>
+
+    <section class="instrumentos" id="partes">
+        <div class="cuerpo">
+            <h3>Partes de la flauta traversa</h3>
+            <p>
+                La flauta está formada por tres partes principales.
+            </p>
+            <ul>
+                <li><strong>Cabeza:</strong> donde se sopla.</li>
+                <li><strong>Cuerpo:</strong> contiene la mayoría de las llaves.</li>
+                <li><strong>Pata:</strong> permite tocar notas más graves.</li>
+            </ul>
+        </div>
+
+        <img src="static/imagenes/partesFlautaTraversa.jpeg" alt="Partes de la flauta traversa">
+    </section>
+
+    <section class="instrumentos" id="respiracion">
+        <div class="cuerpo">
+            <h3>Postura y respiración</h3>
+            <p>
+                La postura correcta ayuda a producir un mejor sonido
+                y evita tensiones.
+            </p>
+            <ul>
+                <li>Espalda recta.</li>
+                <li>Hombros relajados.</li>
+                <li>Sopla suavemente, no con fuerza.</li>
+            </ul>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/ezcKUcUJPC0"
+            title="Respiración en flauta traversa"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="aprendizaje">
+        <div class="cuerpo">
+            <h3>Primeras notas</h3>
+            <p>
+                Comienza con notas sencillas y mantén un sonido estable.
+            </p>
+            <ul>
+                <li>Empieza con la nota <strong>Si</strong>.</li>
+                <li>Luego practica <strong>La</strong> y <strong>Sol</strong>.</li>
+                <li>No te apures, la afinación es clave.</li>
+            </ul>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/1OCcdVrWIQA"
+            title="Primeras notas en flauta traversa"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="practica">
+        <div class="cuerpo">
+            <h3>Práctica recomendada</h3>
+            <p>
+                Practica todos los días aunque sea poco tiempo.
+            </p>
+            <ul>
+                <li>5 minutos de respiración</li>
+                <li>5 minutos de postura</li>
+                <li>5 minutos de notas básicas</li>
+            </ul>
+            <p>
+                La constancia hará que mejores rápidamente.
+            </p>
+        </div>
+
+        <img src="static/imagenes/PracticaFlautaTraversa.png" alt="Práctica de flauta traversa">
+    </section>
+
+    <footer>
+        <p>
+            La música se construye nota a nota.
+            Disfruta cada sonido que aprendas.
+        </p>
+    </footer>
+
+</body>
+</html>

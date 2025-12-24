@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta sobre la página</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body class="pagina_secundaria">
+    <nav class="navegador">
+        <ul>
+            <li><a href="{{ url_for('principal') }}">Inicio</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="titulo">Opiniones sobre la página</h1>
+    </header>
+
+    <section class="formulario">
+        <form id="formEncuesta" action="{{ url_for('guardar_encuesta') }}" method="POST">
+            <fieldset>
+                <legend>Encuesta</legend>
+
+                <label for="nombre">Nombres</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+
+                <label>Género</label>
+                <div class="opciones">
+                    <label>
+                        <input type="radio" name="genero" value="masculino"> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="femenino"> Femenino
+                    </label>
+                </div>
+
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+                <div class="botones-form">
+                    <button type="submit" class="botonPaginas">Enviar</button>
+                    <button type="reset" class="botonSecundario">Eliminar</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <div id="notificacion" class="notificacion">
+        Comentario enviado correctamente
+    </div>
+    <script src="{{ url_for('static', filename='js/encuesta.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Guitarra</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body class="pagina_secundaria">
+
+    <nav class="navegador">
+        <ul>
+            <li><a href="{{ url_for('principal') }}">Inicio</a></li>
+            <li><a href="#Instrucciones3">Instrucciones</a></li>
+            <li><a href="#aprendizaje">Aprender</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="titulo">Guitarra</h1>
+
+    <div class="parrafos">
+        <p>
+            La guitarra es uno de los instrumentos más populares del mundo.
+            Se utiliza para acompañar canciones, tocar melodías y expresar emociones.
+        </p>
+        <p>
+            En esta sección aprenderás las bases necesarias para comenzar desde cero.
+        </p>
+    </div>
+
+    <section class="Instrucciones" id="Instrucciones3">
+        <h2>¿Cómo aprender guitarra?</h2>
+        <ol>
+            <li>Conocer las partes de la guitarra.</li>
+            <li>Aprender la postura correcta.</li>
+            <li>Practicar el rasgueo.</li>
+            <li>Tocar los primeros acordes.</li>
+        </ol>
+    </section>
+
+    <section class="instrumentos" id="partes">
+        <div class="cuerpo">
+            <h3>Partes de la guitarra</h3>
+            <p>
+                Antes de tocar, es importante identificar las partes principales del instrumento.
+            </p>
+            <ul>
+                <li><strong>Cabeza:</strong> donde se afinan las cuerdas.</li>
+                <li><strong>Mástil:</strong> donde se presionan las cuerdas.</li>
+                <li><strong>Cuerpo:</strong> amplifica el sonido.</li>
+                <li><strong>Cuerdas:</strong> producen el sonido.</li>
+            </ul>
+        </div>
+
+        <img src="static/imagenes/partesGuitarra.jpg" alt="Partes de la guitarra">
+    </section>
+
+    <section class="instrumentos" id="postura">
+        <div class="cuerpo">
+            <h3>Postura correcta</h3>
+            <p>
+                Una buena postura te ayudará a tocar cómodo y sin tensiones.
+            </p>
+            <ul>
+                <li>Espalda recta.</li>
+                <li>Guitarra apoyada en la pierna.</li>
+                <li>Manos relajadas.</li>
+            </ul>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/kvdYso4yQ7w"
+            title="Postura correcta para guitarra"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="rasgueo">
+        <div class="cuerpo">
+            <h3>Rasgueo básico</h3>
+            <p>
+                El rasgueo es el movimiento de la mano derecha para tocar las cuerdas.
+            </p>
+            <ul>
+                <li>Empieza con movimientos hacia abajo.</li>
+                <li>Usa la muñeca, no el brazo.</li>
+                <li>Mantén un ritmo constante.</li>
+            </ul>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/ryljpsXZrng"
+            title="Rasgueo básico de guitarra"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="aprendizaje">
+        <div class="cuerpo">
+            <h3>Primeros acordes</h3>
+            <p>
+                Comienza con acordes sencillos para desarrollar fuerza y coordinación.
+            </p>
+            <ul>
+                <li>Do (C)</li>
+                <li>Sol (G)</li>
+                <li>Re (D)</li>
+                <li>Mi menor (Em)</li>
+            </ul>
+            <p>
+                Practica cambiando entre ellos lentamente.
+            </p>
+        </div>
+
+        <iframe
+            width="420"
+            height="240"
+            src="https://www.youtube.com/embed/kdHMt6H4kDc"
+            title="Acordes básicos de guitarra"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="instrumentos" id="practica">
+        <div class="cuerpo">
+            <h3>Práctica recomendada</h3>
+            <p>
+                Dedica al menos 15 minutos diarios.
+            </p>
+            <ul>
+                <li>5 minutos de postura</li>
+                <li>5 minutos de rasgueo</li>
+                <li>5 minutos de acordes</li>
+            </ul>
+            <p>
+                La constancia es la clave del progreso.
+            </p>
+        </div>
+
+        <img src="static/imagenes/PracticaGuitarra.png" alt="Práctica de guitarra">
+    </section>
+
+    <footer>
+        <p>
+            Cada acorde que aprendes te acerca más a la música.
+            Disfruta el proceso.
+        </p>
+    </footer>
+
+</body>
+</html>
