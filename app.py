@@ -1,4 +1,5 @@
 import mysql.connector
+import os
 from flask import Flask, render_template, request, url_for, redirect, session
 
 app = Flask(__name__)
@@ -146,4 +147,5 @@ def violin():
     return render_template("instrumentos/violin.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
