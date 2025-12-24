@@ -1,0 +1,447 @@
+/* Pagina principal */
+#titulo-principal{
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 20px;
+    margin: 10px  10px 150px 10px;
+    text-shadow:  2px 2px 0 black,
+                  -2px 2px 0 black,
+                  2px -2px 0 black,
+                  -2px -2px 0 black;
+}
+#pagina_principal {
+  margin: 0;
+  padding: 0;
+  background-image: url("../imagenes/fondo1.png");
+  background-repeat: no-repeat;       
+  background-size: cover;             
+  background-position: center;    
+  background-attachment: fixed;
+  background-color: black;  
+}
+#boton-principal{
+  text-align: center;
+  background-color: aquamarine;
+  color:rgb(0, 0, 0);
+  font-size: 30px;
+  padding: 50px 50px; 
+  border-radius: 10px;
+  border: white;
+  margin: 0 auto;
+}
+.contenedor {
+     display: flex;
+     flex-direction: row; 
+     justify-content: space-around;
+     align-items: center;
+     margin:40px;
+    }
+.pagina_secundaria {
+  background-color: #1b0f3b;
+  background-image: url("../imagenes/pagina.jpg");
+  color: white;
+}
+.titulo {
+  color: #3fffe0;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Arial Black', Arial, sans-serif;
+  margin: 60px 0;
+}
+/* Parrafos */
+.parrafos{
+  max-width: 800px;
+    margin: 30px auto;
+    padding: 25px 35px;
+    background: rgba(27, 15, 59, 0.85);
+    font-size: 20px;
+    line-height: 1.6;
+    border-radius: 20px;   
+    border: 2px solid #3fffe0;
+    box-shadow:
+        0 0 15px rgba(63, 255, 224, 0.6);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+/* Navegador */
+.navegador {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1b0f3b;
+  border: 2px solid #a855f7;
+  z-index: 1000;
+}
+.navegador ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2.5px;
+  list-style: none;
+  background-color: #1b0f3b;
+}
+.navegador li{
+  font-size: 25px;
+}
+.navegador a{
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navegador a:hover {
+   color: #38bdf8;
+  text-shadow: 0 0 6px #38bdf8;
+}
+
+
+.Instrucciones {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(27, 15, 59, 0.85); 
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(63, 255, 224, 0.4);
+}
+
+.Instrucciones h2 {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 38px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.Instrucciones ol {
+    list-style: none;
+    padding: 0;
+    counter-reset: paso;
+}
+
+.Instrucciones ol li {
+    counter-increment: paso;
+    background-color: rgba(34, 197, 94, 0.12);
+    border-left: 6px solid #22c55e;
+    padding: 18px 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-size: 22px;
+    color: #e5e7eb;
+    position: relative;
+}
+
+.Instrucciones ol li::before {
+    content: counter(paso);
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #22c55e;
+    color: #0b1020;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Instrucciones ol li:hover {
+    background-color: rgba(63, 255, 224, 0.25);
+    transform: translateX(8px);
+    transition: 0.3s;
+}
+/* Instrumentos */
+section.instrumentos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 40px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 25px;
+  border-left: 6px solid #38bdf8;
+}
+
+section.instrumentos .cuerpo {
+  width: 60%;
+  font-size: 20px;
+}
+
+section.instrumentos img {
+  width: 35%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+section {
+  scroll-margin-top: 120px;
+}
+/* Pie de página */ 
+footer {
+  margin-top: 120px;
+  padding: 25px 20px;
+  background: linear-gradient(180deg, #0b1020, #05070f);
+  border-top: 2px solid #38bdf8;
+  text-align: center;
+}
+
+footer p {
+  color: #e5e7eb;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+/* Diseño botones */
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.botonPaginas {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #0b1020;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  transition: all 0.3s ease;
+}
+.botonPaginas:hover {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.8);
+}
+.botonPaginas:active {
+  transform: scale(0.98);
+}
+/* Formulario */
+.formulario {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  font-size: 32px;
+  color: #38bdf8;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid #38bdf8;
+  background-color: #0b1020;
+  color: #e5e7eb;
+  font-size: 16px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+.opciones {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.opciones label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botones-form {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.botonSecundario {
+  background: transparent;
+  color: #e5e7eb;
+  border: 2px solid #ef4444;
+  padding: 16px 35px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botonSecundario:hover {
+  background-color: #ef4444;
+  color: #0b1020;
+}
+.notificacion {
+    position: fixed;
+    bottom: 30px;
+    right: -300px;
+    background: #22c55e;
+    color: #0b1020;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+    transition: right 0.4s ease;
+    z-index: 9999;
+}
+
+.notificacion.mostrar {
+    right: 30px;
+}
+.oculto {
+    display: none;
+}
+/*Comentarios */
+#foro {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(27, 15, 59, 0.85);
+    border-radius: 20px;
+    border: 2px solid #3fffe0;
+}
+
+#foro h2 {
+    color: #38bdf8;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+#lista-comentarios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comentario {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border-left: 4px solid #38bdf8;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+}
+
+.comentario .usuario {
+    font-weight: bold;
+    color: #3fffe0;
+    margin-bottom: 5px;
+}
+
+.comentario + .comentario {
+    margin-top: 10px;
+}
+/* ===== PANEL ADMIN ===== */
+.admin-panel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.estado {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.estado.admin {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.estado.usuario {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-admin {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-admin:hover {
+    background-color: #0056b3;
+}
+
+.btn-salir {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-salir:hover {
+    background-color: #b52a37;
+}
+.btn-eliminar {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+}
+
+.btn-eliminar:hover {
+    background: #dc2626;
+}
+
+.correo {
+    display: block;
+    color: #38bdf8;
+    font-size: 14px;
+}
